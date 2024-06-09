@@ -209,23 +209,6 @@ ol li {
     text-align: left;
 }
 
-.nutrition table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 1em;
-}
-
-.nutrition th, .nutrition td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
-}
-
-.nutrition th {
-    background-color: #f2f2f2;
-    font-weight: bold;
-}
-
 .ingredients h3 {
     color: var(--primary-nutmeg);
     font-family: 'Young serif', sans-serif;
