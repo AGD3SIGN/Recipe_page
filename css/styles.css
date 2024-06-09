@@ -28,6 +28,7 @@
 
     /* PARAGRAPHS */
     --paragraph: 16px;
+    --paragraph-small: 14px;
     
 }
 
@@ -102,11 +103,11 @@ body {
     background-color: #f5e8e4;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-top: 50px;
     margin-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 .container {
@@ -115,6 +116,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 600px;
     padding: 25px;
+
 }
 
 .recipe-card {
@@ -235,7 +237,7 @@ ol li {
     margin-left: 15px;
     padding-left: 15px;
     color: var(--neutral-wenge-brown);
-    font-size: 14px;
+    font-size: var(--paragraph-small);
 }
 
 .ingredients li::marker {
@@ -255,7 +257,7 @@ ol li {
 
 .instructions li {
     padding-left: 15px;
-    font-size: 14px;
+    font-size: var(--paragraph-small);
     line-height: 1.5;
     color: var(--neutral-wenge-brown);
 }
@@ -272,7 +274,7 @@ ol li {
 }
 
 .nutrition p {
-    font-size: 14px;
+    font-size: var(--paragraph-small);
 }
 
 .nutrition table {
@@ -311,9 +313,14 @@ ol li {
 
 
 .attribution {
-  font-size: 11px;
+  font-size: var(--paragraph-small);
   text-align: center;
+  padding-top: 25px;
+  padding-bottom: 15px;
 }
+
 .attribution a {
-  color: hsl(228, 45%, 44%);
+    color: hsl(228, 45%, 44%);
 }
+
+
