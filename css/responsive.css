@@ -1,0 +1,59 @@
+/* BREAKPOINTS */
+@media screen and (min-width: 375px) {
+    body {
+        padding: 25px;
+        margin-top: 15px;
+        overflow-y: auto;
+    }
+
+    .recipe-card h1 {
+        font-family: 'Young serif', sans-serif;
+        font-size: .5rem;
+        line-height: 1.3;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    body {
+        padding: 25px;
+        margin-top: 15px;
+    }
+
+    .recipe-card h1 {
+        font-family: 'Young serif', sans-serif;
+        font-size: var(--h3-font);
+        line-height: 1.3;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    body {
+        padding: 25px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .recipe-card h1 {
+        font-family: 'Young serif', sans-serif;
+        font-size: var(--h3-font);
+        line-height: 1.3;
+    }
+}
+
+@media screen and (min-width: 451px) {
+    body {
+        padding: 25px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .recipe-card h1 {
+        font-family: 'Young serif', sans-serif;
+        font-size: var(--h3-font);
+        line-height: 1.3;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+
+}

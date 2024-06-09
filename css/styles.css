@@ -1,0 +1,319 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+
+/* ========== CUSTOM VARIABLES ========== */
+:root {
+    /* COLORS */
+    --primary-nutmeg: hsl(14, 45%, 36%);
+    --primary-dark-raspberry: hsl(332, 51%, 32%);
+
+    --neutral-white: hsl(0, 0%, 100%);
+    --neutral-rose-white: hsl(330, 100%, 98%);
+    --neutral-eggshell: hsl(30, 54%, 90%);
+    --neutral-light-grey: hsl(30, 18%, 87%);
+    --neutral-wenge-brown: hsl(30, 10%, 34%);
+    --neutral-dark-charcoal: hsl(24, 5%, 18%);
+
+
+    /* TYPOGRAPHY */
+
+    /* HEADINGS */
+    --h1-font: 2.125rem;
+    --h2-font: 1.875rem;
+    --h3-font: 1.5rem;
+    --h4-font: 1.25rem;
+    --h5-font: 1.125rem;
+    --h6-font: 1rem;
+
+    /* PARAGRAPHS */
+    --paragraph: 16px;
+    
+}
+
+/* REUSABLE CSS */
+hr {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin: 1.5em 0;
+}
+
+/* ========== CSS RESET ========== */
+/* // https://piccalil.li/blog/a-modern-css-reset */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+    margin: 0;
+    padding: 0;
+    font : inherit ;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+body {
+    font-family: 'outfit', sans-serif;
+    background-color: #f5e8e4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    padding: 25px;
+}
+
+.recipe-card {
+    text-align: left;
+}
+
+.recipe-card h1 {
+    font-family: 'Young serif', sans-serif;
+    font-size: var(--h1-font);
+    line-height: 1.5;
+}
+
+.recipe-card p {
+    font-size: var(--paragraph);
+    line-height: 1.2;
+}
+
+.recipe-image {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.5em 0;
+}
+
+.description {
+    font-size: 1em;
+    color: #666;
+    margin: 0.5em 0 1em;
+}
+
+.prep-time, .ingredients, .instructions, .nutrition {
+    text-align: left;
+    margin: 1.5em 0;
+}
+
+.prep-time {
+    background-color: var(--neutral-rose-white);
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.prep-time h3 {
+    color: var(--primary-dark-raspberry);
+}
+
+.prep-time li {
+    list-style: disc;
+    margin-left: 15px;
+}
+
+.prep-time li::marker {
+    color: var(--primary-dark-raspberry);
+}
+
+.prep-time li p {
+    padding-left: 15px;
+    color: var(--neutral-wenge-brown);
+}
+
+.prep-time li p strong {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+h3 {
+    font-size: 1.25em;
+    margin-bottom: 0.5em;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    font-size: 1em;
+    margin: 0.5em 0;
+}
+
+ol {
+    padding-left: 1.2em;
+}
+
+ol li {
+    margin: 0.5em 0;
+    font-size: 1em;
+    text-align: left;
+}
+
+.nutrition table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1em;
+}
+
+.nutrition th, .nutrition td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.nutrition th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.ingredients h3 {
+    color: var(--primary-nutmeg);
+    font-family: 'Young serif', sans-serif;
+    font-size: var(--h3-font);
+}
+
+.ingredients li {
+    list-style: disc;
+    margin-left: 15px;
+    padding-left: 15px;
+    color: var(--neutral-wenge-brown);
+    font-size: 14px;
+}
+
+.ingredients li::marker {
+    color: var(--primary-nutmeg);
+}
+
+.instructions h3 {
+    color: var(--primary-nutmeg);
+    font-family: 'Young serif', sans-serif;
+    font-size: var(--h3-font);
+}
+
+.instructions li strong {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.instructions li {
+    padding-left: 15px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--neutral-wenge-brown);
+}
+
+.instructions li::marker {
+    color: var(--primary-nutmeg);
+    font-weight: bold;
+}
+
+.nutrition h3 {
+    color: var(--primary-nutmeg);
+    font-family: 'Young serif', sans-serif;
+    font-size: var(--h3-font);
+}
+
+.nutrition p {
+    font-size: 14px;
+}
+
+.nutrition table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1em;
+}
+
+.nutrition th, .nutrition td {
+    border: none;
+    padding: 8px;
+    font-size: 1em;
+}
+
+.nutrition th {
+    text-align: left;
+    font-weight: normal;
+    color: var(--neutral-wenge-brown);
+    background: transparent;
+}
+
+.nutrition td {
+    text-align: left;
+    font-weight: bold;
+    color: var(--primary-nutmeg);
+}
+
+.nutrition tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.nutrition tr:last-child {
+    border-bottom: none;
+}
+
+
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
